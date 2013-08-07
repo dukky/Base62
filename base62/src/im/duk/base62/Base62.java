@@ -121,6 +121,7 @@ public class Base62 {
 
 		// Using invalid characters throws a runtime exception.
 		// Output was out of order with ant.
+		
 		Thread.sleep(100);
 		try {
 			// Doesn't work
