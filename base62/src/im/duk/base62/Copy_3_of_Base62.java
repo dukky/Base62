@@ -21,13 +21,13 @@ package im.duk.base62;
  * 
  * @author Andreas Holley
  */
-public class Base62 {
+public class Copy_3_of_Base62 {
 	private String characters;
 
 	/**
 	 * Constructs a Base62 object with the default charset (0..9a..zA..Z).
 	 */
-	public Base62() {
+	public Copy_3_of_Base62() {
 		this("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ");
 	}
 
@@ -38,7 +38,7 @@ public class Base62 {
 	 *            the charset to use. Must be 62 characters.
 	 * @throws <code>IllegalArgumentException<code> if the supplied charset is not 62 characters long.
 	 */
-	public Base62(String characters) {
+	public Copy_3_of_Base62(String characters) {
 		if (!(characters.length() == 62)) {
 			throw new IllegalArgumentException(
 					"Invalid string length, must be 62.");
@@ -96,10 +96,10 @@ public class Base62 {
 	// Examples
 	public static void main(String[] args) throws InterruptedException {
 		// Create a Base62 object using the default charset.
-		Base62 base62 = new Base62();
+		Copy_3_of_Base62 base62 = new Copy_3_of_Base62();
 		System.gc();
 		// Create a Base62 object with an alternate charset.
-		Base62 base62alt = new Base62(
+		Copy_3_of_Base62 base62alt = new Copy_3_of_Base62(
 				"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
 
 		// Convert 1673 to Base62 (qZ).
