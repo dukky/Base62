@@ -129,5 +129,6 @@ public class Base62 {
 			e.printStackTrace();
 		}
 		
+		
 	}
 }
