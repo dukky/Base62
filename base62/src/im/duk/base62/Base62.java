@@ -128,5 +128,6 @@ public class Base62 {
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
+		
 	}
 }
